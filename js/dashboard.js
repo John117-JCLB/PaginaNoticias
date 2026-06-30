@@ -82,5 +82,4 @@ function eliminarNoticia(id){
     );
 
     location.reload();
-
 }

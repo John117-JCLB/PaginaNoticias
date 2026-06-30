@@ -40,5 +40,4 @@ function cargarUltimaHora(){
         });
 
     marquee.innerHTML=texto;
-
 }

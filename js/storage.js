@@ -52,5 +52,4 @@ function borrarNoticia(id){
         );
 
     guardarNoticias(noticias);
-
 }
