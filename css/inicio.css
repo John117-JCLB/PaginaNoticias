@@ -1,0 +1,346 @@
+/*========================================
+            NOTICIA PRINCIPAL
+========================================*/
+
+.principal{
+
+    width:90%;
+
+    margin:40px auto;
+
+}
+
+.noticia-principal{
+
+    background:var(--blanco);
+
+    border-radius:var(--radio);
+
+    overflow:hidden;
+
+    box-shadow:var(--sombra);
+
+    transition:var(--transicion);
+
+}
+
+.noticia-principal:hover{
+
+    box-shadow:var(--sombra-hover);
+
+}
+
+.noticia-principal img{
+
+    width:100%;
+
+    height:500px;
+
+    object-fit:cover;
+
+}
+
+.contenido-principal{
+
+    padding:35px;
+
+}
+
+.categoria{
+
+    display:inline-block;
+
+    background:var(--rojo);
+
+    color:white;
+
+    padding:8px 18px;
+
+    border-radius:25px;
+
+    font-size:14px;
+
+    font-weight:bold;
+
+    margin-bottom:20px;
+
+}
+
+.contenido-principal h2{
+
+    font-size:38px;
+
+    margin-bottom:20px;
+
+    color:#222;
+
+}
+
+.contenido-principal p{
+
+    font-size:18px;
+
+    color:var(--gris);
+
+}
+
+/*========================================
+            GRID DE NOTICIAS
+========================================*/
+
+.noticias{
+
+    width:90%;
+
+    margin:50px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+/*========================================
+                TARJETAS
+========================================*/
+
+.card{
+
+    background:var(--blanco);
+
+    border-radius:var(--radio);
+
+    overflow:hidden;
+
+    box-shadow:var(--sombra);
+
+    transition:var(--transicion);
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:var(--sombra-hover);
+
+}
+
+.card img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+}
+
+.etiqueta{
+
+    display:inline-block;
+
+    margin:20px 20px 10px;
+
+    background:var(--rojo);
+
+    color:white;
+
+    padding:8px 15px;
+
+    border-radius:20px;
+
+    font-size:14px;
+
+}
+
+.card h3{
+
+    padding:0 20px;
+
+    margin-bottom:15px;
+
+    font-size:22px;
+
+}
+
+.card p{
+
+    padding:0 20px;
+
+    color:var(--gris);
+
+    margin-bottom:20px;
+
+}
+
+.card a{
+
+    display:inline-block;
+
+    margin:0 20px 25px;
+
+    color:var(--rojo);
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+}
+
+.card a:hover{
+
+    color:var(--rojo-hover);
+
+}
+
+/*========================================
+            EFECTO IMÁGENES
+========================================*/
+
+.card img,
+.noticia-principal img{
+
+    transition:.5s;
+
+}
+
+.card:hover img{
+
+    transform:scale(1.05);
+
+}
+
+.noticia-principal:hover img{
+
+    transform:scale(1.02);
+
+}
+
+/*========================================
+        SECCIÓN DESTACADA
+========================================*/
+
+.destacado{
+
+    width:90%;
+
+    margin:60px auto;
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:30px;
+
+}
+
+.destacado-principal{
+
+    background:white;
+
+    border-radius:var(--radio);
+
+    overflow:hidden;
+
+    box-shadow:var(--sombra);
+
+}
+
+.destacado-secundario{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+/*========================================
+        TARJETAS PEQUEÑAS
+========================================*/
+
+.card-mini{
+
+    display:flex;
+
+    background:white;
+
+    border-radius:var(--radio);
+
+    overflow:hidden;
+
+    box-shadow:var(--sombra);
+
+    transition:.3s;
+
+}
+
+.card-mini:hover{
+
+    transform:translateX(5px);
+
+}
+
+.card-mini img{
+
+    width:120px;
+
+    object-fit:cover;
+
+}
+
+.card-mini .texto{
+
+    padding:15px;
+
+}
+
+.card-mini h4{
+
+    margin-bottom:10px;
+
+    font-size:16px;
+
+}
+
+.card-mini p{
+
+    color:var(--gris);
+
+    font-size:14px;
+
+}
+
+/*========================================
+        ANIMACIONES
+========================================*/
+
+.card{
+
+    animation:aparecer .6s ease;
+
+}
+
+@keyframes aparecer{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}

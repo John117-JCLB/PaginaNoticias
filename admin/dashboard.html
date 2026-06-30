@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | RASTRO CHIMBOTE</title>
+
+    <!-- Iconos -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<!-- Barra Superior -->
+
+<header class="admin-header">
+
+    <h1>
+        <i class="fas fa-newspaper"></i>
+        RASTRO CHIMBOTE
+    </h1>
+
+    <a href="../index.html" class="btn-sitio">
+        <i class="fas fa-globe"></i>
+        Ver Sitio
+    </a>
+
+</header>
+
+<!-- Panel -->
+
+<main class="dashboard-container">
+
+    <h2>Panel de Administración</h2>
+
+    <p>
+        Bienvenido. Desde aquí podrás administrar todas las
+        noticias publicadas en RASTRO CHIMBOTE.
+    </p>
+
+    <section class="dashboard-grid">
+
+        <a href="nueva-noticia.html" class="dashboard-card">
+
+            <i class="fas fa-plus-circle"></i>
+
+            <h3>Nueva Noticia</h3>
+
+            <p>
+                Crear una nueva publicación.
+            </p>
+
+        </a>
+
+        <a href="editar-noticia.html" class="dashboard-card">
+
+            <i class="fas fa-pen-to-square"></i>
+
+            <h3>Editar Noticias</h3>
+
+            <p>
+                Modificar publicaciones existentes.
+            </p>
+
+        </a>
+
+        <a href="#" class="dashboard-card">
+
+            <i class="fas fa-trash"></i>
+
+            <h3>Eliminar Noticias</h3>
+
+            <p>
+                Eliminar publicaciones antiguas.
+            </p>
+
+        </a>
+
+        <a href="../pages/denuncias.html" class="dashboard-card">
+
+            <i class="fas fa-bullhorn"></i>
+
+            <h3>Ver Denuncias</h3>
+
+            <p>
+                Revisar denuncias recibidas.
+            </p>
+
+        </a>
+
+        <a href="../pages/contacto.html" class="dashboard-card">
+
+            <i class="fas fa-envelope"></i>
+
+            <h3>Mensajes</h3>
+
+            <p>
+                Consultas enviadas por los usuarios.
+            </p>
+
+        </a>
+
+        <a href="login.html" class="dashboard-card salir">
+
+            <i class="fas fa-right-from-bracket"></i>
+
+            <h3>Cerrar Sesión</h3>
+
+            <p>
+                Salir del panel administrativo.
+            </p>
+
+        </a>
+
+    </section>
+
+</main>
+
+<script src="../js/storage.js"></script>
+<script src="../js/dashboard.js"></script>
+
+</body>
+</html>

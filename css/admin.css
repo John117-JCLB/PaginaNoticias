@@ -1,0 +1,517 @@
+/*========================================
+            LOGIN
+========================================*/
+
+.login-container{
+
+    min-height:100vh;
+
+    background:#111;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:30px;
+
+}
+
+.login-box{
+
+    width:420px;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+
+}
+
+.login-box h1{
+
+    color:var(--rojo);
+
+    text-align:center;
+
+    margin-bottom:10px;
+
+}
+
+.login-box p{
+
+    text-align:center;
+
+    color:var(--gris);
+
+    margin-bottom:30px;
+
+}
+
+.input-group{
+
+    margin-bottom:20px;
+
+}
+
+.input-group label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-weight:bold;
+
+}
+
+.input-group input{
+
+    width:100%;
+
+}
+
+.login-box button{
+
+    width:100%;
+
+    margin-top:15px;
+
+}
+
+.volver{
+
+    display:block;
+
+    margin-top:25px;
+
+    text-align:center;
+
+    color:var(--rojo);
+
+    text-decoration:none;
+
+}
+
+.volver:hover{
+
+    color:var(--rojo-hover);
+
+}
+
+/*========================================
+            HEADER ADMIN
+========================================*/
+
+.admin-header{
+
+    background:#111;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 40px;
+
+}
+
+.admin-header h1{
+
+    color:var(--rojo);
+
+    font-size:30px;
+
+}
+
+.btn-sitio{
+
+    background:var(--rojo);
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:12px 22px;
+
+    border-radius:8px;
+
+    transition:.3s;
+
+}
+
+.btn-sitio:hover{
+
+    background:var(--rojo-hover);
+
+}
+
+/*========================================
+            DASHBOARD
+========================================*/
+
+.dashboard-container{
+
+    width:90%;
+
+    margin:50px auto;
+
+}
+
+.dashboard-container h2{
+
+    margin-bottom:10px;
+
+    color:var(--rojo);
+
+}
+
+.dashboard-container p{
+
+    color:var(--gris);
+
+    margin-bottom:40px;
+
+}
+
+.dashboard-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:25px;
+
+}
+
+.dashboard-card{
+
+    background:white;
+
+    padding:35px;
+
+    text-align:center;
+
+    border-radius:15px;
+
+    text-decoration:none;
+
+    color:#333;
+
+    box-shadow:var(--sombra);
+
+    transition:.3s;
+
+}
+
+.dashboard-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:var(--sombra-hover);
+
+}
+
+.dashboard-card i{
+
+    font-size:50px;
+
+    color:var(--rojo);
+
+    margin-bottom:20px;
+
+}
+
+.dashboard-card h3{
+
+    margin-bottom:15px;
+
+}
+
+.dashboard-card p{
+
+    color:var(--gris);
+
+}
+
+.dashboard-card.salir{
+
+    background:#ffecec;
+
+}
+
+.dashboard-card.salir i{
+
+    color:#dc3545;
+
+}
+
+/*========================================
+        CONTENEDOR ADMIN
+========================================*/
+
+.admin-container{
+
+    width:90%;
+
+    margin:40px auto;
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:15px;
+
+    box-shadow:var(--sombra);
+
+}
+
+.admin-container h2{
+
+    color:var(--rojo);
+
+    margin-bottom:15px;
+
+}
+
+.admin-container p{
+
+    color:var(--gris);
+
+    margin-bottom:30px;
+
+}
+
+/*========================================
+            FORMULARIOS
+========================================*/
+
+.admin-form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.admin-form label{
+
+    font-weight:bold;
+
+}
+
+.admin-form input,
+.admin-form textarea,
+.admin-form select{
+
+    width:100%;
+
+}
+
+.admin-form textarea{
+
+    resize:vertical;
+
+}
+
+.admin-form button{
+
+    margin-top:20px;
+
+    width:250px;
+
+}
+
+/*========================================
+            TABLA
+========================================*/
+
+.tabla-admin{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:30px;
+
+}
+
+.tabla-admin th{
+
+    background:var(--rojo);
+
+    color:white;
+
+    padding:15px;
+
+}
+
+.tabla-admin td{
+
+    padding:15px;
+
+    border-bottom:1px solid #ddd;
+
+}
+
+.tabla-admin tr:hover{
+
+    background:#fafafa;
+
+}
+
+/*========================================
+            ESTADOS
+========================================*/
+
+.estado{
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    font-size:13px;
+
+    font-weight:bold;
+
+    color:white;
+
+}
+
+.publicado{
+
+    background:#28a745;
+
+}
+
+.borrador{
+
+    background:#ff9800;
+
+}
+
+/*========================================
+            BOTONES TABLA
+========================================*/
+
+.btn-editar,
+.btn-eliminar{
+
+    border:none;
+
+    cursor:pointer;
+
+    width:40px;
+
+    height:40px;
+
+    border-radius:8px;
+
+    color:white;
+
+    margin-right:5px;
+
+}
+
+.btn-editar{
+
+    background:#007bff;
+
+}
+
+.btn-editar:hover{
+
+    background:#0056b3;
+
+}
+
+.btn-eliminar{
+
+    background:#dc3545;
+
+}
+
+.btn-eliminar:hover{
+
+    background:#a71d2a;
+
+}
+
+/*========================================
+            ICONOS
+========================================*/
+
+.btn-editar i,
+.btn-eliminar i{
+
+    font-size:15px;
+
+}
+
+/*========================================
+        TARJETAS ADMIN
+========================================*/
+
+.admin-card{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    box-shadow:var(--sombra);
+
+}
+
+.admin-card h3{
+
+    margin-bottom:15px;
+
+}
+
+.admin-card p{
+
+    color:var(--gris);
+
+}
+
+/*========================================
+        ANIMACIÓN
+========================================*/
+
+.dashboard-card,
+.login-box,
+.admin-container{
+
+    animation:fade .5s ease;
+
+}
+
+@keyframes fade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Noticias | RASTRO CHIMBOTE</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<!-- HEADER -->
+
+<header class="admin-header">
+
+    <h1>
+        <i class="fas fa-newspaper"></i>
+        RASTRO CHIMBOTE
+    </h1>
+
+    <a href="dashboard.html" class="btn-sitio">
+        <i class="fas fa-arrow-left"></i>
+        Volver al Panel
+    </a>
+
+</header>
+
+<!-- CONTENIDO -->
+
+<main class="admin-container">
+
+    <h2>Administrar Noticias</h2>
+
+    <p>
+        Desde esta sección podrás editar o eliminar
+        las noticias publicadas.
+    </p>
+
+    <table class="tabla-admin">
+
+        <thead>
+
+        <tr>
+
+            <th>ID</th>
+            <th>Título</th>
+            <th>Categoría</th>
+            <th>Autor</th>
+            <th>Fecha</th>
+            <th>Estado</th>
+            <th>Acciones</th>
+
+        </tr>
+
+        </thead>
+
+        <tbody>
+
+        <tr>
+
+            <td>1</td>
+
+            <td>
+                Accidente de tránsito genera congestión
+            </td>
+
+            <td>Policiales</td>
+
+            <td>Administrador</td>
+
+            <td>29/06/2026</td>
+
+            <td>
+
+                        <span class="estado publicado">
+
+                            Publicado
+
+                        </span>
+
+            </td>
+
+            <td>
+
+                <button class="btn-editar">
+
+                    <i class="fas fa-pen"></i>
+
+                </button>
+
+                <button class="btn-eliminar">
+
+                    <i class="fas fa-trash"></i>
+
+                </button>
+
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td>2</td>
+
+            <td>
+                Feria tecnológica reúne estudiantes
+            </td>
+
+            <td>Universidad</td>
+
+            <td>Administrador</td>
+
+            <td>28/06/2026</td>
+
+            <td>
+
+                        <span class="estado publicado">
+
+                            Publicado
+
+                        </span>
+
+            </td>
+
+            <td>
+
+                <button class="btn-editar">
+
+                    <i class="fas fa-pen"></i>
+
+                </button>
+
+                <button class="btn-eliminar">
+
+                    <i class="fas fa-trash"></i>
+
+                </button>
+
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td>3</td>
+
+            <td>
+                Vecinos solicitan mejoras en pistas
+            </td>
+
+            <td>Vecinales</td>
+
+            <td>Administrador</td>
+
+            <td>27/06/2026</td>
+
+            <td>
+
+                        <span class="estado borrador">
+
+                            Borrador
+
+                        </span>
+
+            </td>
+
+            <td>
+
+                <button class="btn-editar">
+
+                    <i class="fas fa-pen"></i>
+
+                </button>
+
+                <button class="btn-eliminar">
+
+                    <i class="fas fa-trash"></i>
+
+                </button>
+
+            </td>
+
+        </tr>
+
+        </tbody>
+
+    </table>
+
+</main>
+
+<script src="../js/storage.js"></script>
+<script src="../js/dashboard.js"></script>
+
+</body>
+</html>

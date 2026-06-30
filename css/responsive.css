@@ -1,0 +1,300 @@
+/*========================================
+            TABLETS
+========================================*/
+
+@media (max-width: 1024px){
+
+    header{
+
+        flex-direction:column;
+
+        text-align:center;
+
+        gap:20px;
+
+    }
+
+    .logo h1{
+
+        font-size:32px;
+
+    }
+
+    .noticias{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .destacada{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .contacto{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .dashboard-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .lista-noticias{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+/*========================================
+            CELULARES
+========================================*/
+
+@media (max-width:768px){
+
+    /* HEADER */
+
+    header{
+
+        padding:20px;
+
+    }
+
+    .logo h1{
+
+        font-size:28px;
+
+    }
+
+    .logo p{
+
+        font-size:14px;
+
+    }
+
+    .redes{
+
+        flex-direction:column;
+
+        gap:10px;
+
+    }
+
+    /* NAV */
+
+    nav ul{
+
+        flex-direction:column;
+
+    }
+
+    nav a{
+
+        text-align:center;
+
+        padding:15px;
+
+    }
+
+    /* NOTICIA PRINCIPAL */
+
+    .contenido-principal{
+
+        padding:20px;
+
+    }
+
+    .contenido-principal h2{
+
+        font-size:28px;
+
+    }
+
+    .noticia-principal img{
+
+        height:250px;
+
+    }
+
+    /* TARJETAS */
+
+    .noticias{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .lista-noticias{
+
+        grid-template-columns:1fr;
+
+    }
+
+    /* ULTIMA HORA */
+
+    .ultima-hora{
+
+        flex-direction:column;
+
+    }
+
+    .titulo-ultima{
+
+        width:100%;
+
+        text-align:center;
+
+    }
+
+    /* CABECERAS */
+
+    .cabecera-pagina{
+
+        padding:25px;
+
+    }
+
+    .cabecera-pagina h1{
+
+        font-size:28px;
+
+    }
+
+    /* CONTACTO */
+
+    .contacto{
+
+        grid-template-columns:1fr;
+
+    }
+
+    /* DASHBOARD */
+
+    .dashboard-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .dashboard-card{
+
+        padding:25px;
+
+    }
+
+    /* ADMIN */
+
+    .admin-header{
+
+        flex-direction:column;
+
+        gap:20px;
+
+        text-align:center;
+
+    }
+
+    .admin-container{
+
+        padding:20px;
+
+    }
+
+    /* FORMULARIOS */
+
+    .admin-form button{
+
+        width:100%;
+
+    }
+
+    /* TABLAS */
+
+    .tabla-admin{
+
+        display:block;
+
+        overflow-x:auto;
+
+        white-space:nowrap;
+
+    }
+
+    /* LOGIN */
+
+    .login-box{
+
+        width:100%;
+
+        padding:30px;
+
+    }
+
+}
+
+/*========================================
+        CELULARES PEQUEÑOS
+========================================*/
+
+@media (max-width:480px){
+
+    .logo h1{
+
+        font-size:24px;
+
+    }
+
+    .contenido-principal h2{
+
+        font-size:22px;
+
+    }
+
+    .card h3{
+
+        font-size:18px;
+
+    }
+
+    .cabecera-pagina h1{
+
+        font-size:24px;
+
+    }
+
+    .dashboard-card i{
+
+        font-size:40px;
+
+    }
+
+    .admin-header h1{
+
+        font-size:24px;
+
+    }
+
+    .btn-sitio{
+
+        width:100%;
+
+        text-align:center;
+
+    }
+
+    .info-contacto,
+    .formulario-contacto,
+    .admin-container,
+    .seccion{
+
+        padding:20px;
+
+    }
+
+}

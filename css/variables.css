@@ -1,0 +1,46 @@
+/*======================================
+        VARIABLES GLOBALES
+======================================*/
+
+:root{
+
+    /* Colores principales */
+
+    --rojo:#c62828;
+    --rojo-hover:#8e0000;
+
+    --negro:#111111;
+
+    --gris:#666666;
+
+    --gris-claro:#f4f4f4;
+
+    --gris-borde:#dddddd;
+
+    --blanco:#ffffff;
+
+    --verde:#28a745;
+
+    --azul:#007bff;
+
+    --naranja:#ff9800;
+
+    --rojo-eliminar:#dc3545;
+
+    /* Bordes */
+
+    --radio:15px;
+
+    --radio-pequeno:8px;
+
+    /* Sombras */
+
+    --sombra:0 5px 15px rgba(0,0,0,.1);
+
+    --sombra-hover:0 10px 25px rgba(0,0,0,.2);
+
+    /* Transiciones */
+
+    --transicion:.3s;
+
+}

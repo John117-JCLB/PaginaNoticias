@@ -1,0 +1,252 @@
+/*========================================
+            CONTENEDOR GENERAL
+========================================*/
+
+.contacto,
+.contenedor-formulario{
+
+    width:90%;
+    max-width:1200px;
+
+    margin:40px auto;
+
+    display:grid;
+
+    grid-template-columns:1fr 2fr;
+
+    gap:30px;
+}
+
+/*========================================
+            TARJETAS
+========================================*/
+
+.info-contacto,
+.formulario-contacto,
+.form-denuncia{
+
+    background:var(--blanco);
+
+    padding:35px;
+
+    border-radius:var(--radio);
+
+    box-shadow:var(--sombra);
+
+    transition:var(--transicion);
+
+}
+
+.info-contacto:hover,
+.formulario-contacto:hover,
+.form-denuncia:hover{
+
+    box-shadow:var(--sombra-hover);
+    transform:translateY(-3px);
+}
+
+/*========================================
+            INFORMACIÓN
+========================================*/
+
+.info-contacto h2{
+
+    color:var(--rojo);
+
+    margin-bottom:25px;
+
+    font-size:28px;
+}
+
+.info-contacto p{
+
+    color:var(--gris);
+
+    margin-bottom:18px;
+
+    font-size:17px;
+
+    line-height:1.6;
+}
+
+.info-contacto i{
+
+    color:var(--rojo);
+
+    width:30px;
+
+    font-size:18px;
+}
+
+/*========================================
+            FORMULARIOS
+========================================*/
+
+.formulario-contacto form,
+.form-denuncia{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+}
+
+/*========================================
+                LABELS
+========================================*/
+
+.form-denuncia label,
+.formulario-contacto label{
+
+    font-weight:700;
+
+    color:#333;
+
+    font-size:15px;
+}
+
+/*========================================
+                INPUTS
+========================================*/
+
+.form-denuncia input,
+.form-denuncia textarea,
+.form-denuncia select,
+.formulario-contacto input,
+.formulario-contacto textarea{
+
+    width:100%;
+
+    padding:15px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    outline:none;
+
+    transition:.3s;
+
+    background:#fff;
+}
+
+.form-denuncia input:focus,
+.form-denuncia textarea:focus,
+.form-denuncia select:focus,
+.formulario-contacto input:focus,
+.formulario-contacto textarea:focus{
+
+    border-color:var(--rojo);
+
+    box-shadow:0 0 10px rgba(198,40,40,.2);
+}
+
+/*========================================
+                TEXTAREA
+========================================*/
+
+.form-denuncia textarea,
+.formulario-contacto textarea{
+
+    resize:vertical;
+
+    min-height:180px;
+}
+
+/*========================================
+                ARCHIVOS
+========================================*/
+
+input[type="file"]{
+
+    padding:12px;
+
+    background:#fafafa;
+
+    border:2px dashed #ccc;
+
+    cursor:pointer;
+}
+
+/*========================================
+                BOTONES
+========================================*/
+
+.form-denuncia button,
+.formulario-contacto button{
+
+    background:var(--rojo);
+
+    color:white;
+
+    border:none;
+
+    padding:16px;
+
+    border-radius:10px;
+
+    font-size:17px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.form-denuncia button:hover,
+.formulario-contacto button:hover{
+
+    background:var(--rojo-hover);
+
+    transform:translateY(-2px);
+}
+
+/*========================================
+                MENSAJES
+========================================*/
+
+.mensaje-exito{
+
+    background:#d4edda;
+
+    color:#155724;
+
+    padding:15px;
+
+    border-radius:8px;
+}
+
+.mensaje-error{
+
+    background:#f8d7da;
+
+    color:#721c24;
+
+    padding:15px;
+
+    border-radius:8px;
+}
+
+/*========================================
+                RESPONSIVE
+========================================*/
+
+@media(max-width:900px){
+
+    .contacto,
+    .contenedor-formulario{
+
+        grid-template-columns:1fr;
+    }
+
+    .info-contacto,
+    .formulario-contacto,
+    .form-denuncia{
+
+        padding:25px;
+    }
+}

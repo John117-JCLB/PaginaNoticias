@@ -1,0 +1,443 @@
+/*========================================
+                RESET
+========================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:var(--gris-claro);
+    color:#222;
+    line-height:1.6;
+}
+
+/*========================================
+                HEADER
+========================================*/
+
+header{
+
+    background:var(--negro);
+
+    color:white;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 50px;
+
+    flex-wrap:wrap;
+
+}
+
+.logo h1{
+
+    color:var(--rojo);
+
+    font-size:40px;
+
+    letter-spacing:2px;
+
+}
+
+.logo p{
+
+    color:#ddd;
+
+    margin-top:5px;
+
+}
+
+/*========================================
+            REDES SOCIALES
+========================================*/
+
+.redes{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+.redes a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:18px;
+
+    transition:.3s;
+
+}
+
+.redes a:hover{
+
+    color:var(--rojo);
+
+}
+
+/*========================================
+                NAVBAR
+========================================*/
+
+nav{
+
+    background:var(--rojo);
+
+}
+
+nav ul{
+
+    list-style:none;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+nav li{
+
+    list-style:none;
+
+}
+
+nav a{
+
+    display:block;
+
+    padding:18px 28px;
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+    font-weight:bold;
+
+}
+
+nav a:hover{
+
+    background:var(--rojo-hover);
+
+}
+
+nav .activo{
+
+    background:var(--negro);
+
+}
+
+/*========================================
+            ULTIMA HORA
+========================================*/
+
+.ultima-hora{
+
+    display:flex;
+
+    background:var(--negro);
+
+    color:white;
+
+    overflow:hidden;
+
+}
+
+.titulo-ultima{
+
+    background:var(--rojo);
+
+    padding:15px 25px;
+
+    font-weight:bold;
+
+    white-space:nowrap;
+
+}
+
+.contenedor-marquee{
+
+    flex:1;
+
+    overflow:hidden;
+
+}
+
+.marquee{
+
+    display:inline-block;
+
+    white-space:nowrap;
+
+    padding-left:100%;
+
+    animation:mover 25s linear infinite;
+
+}
+
+@keyframes mover{
+
+    from{
+
+        transform:translateX(0);
+
+    }
+
+    to{
+
+        transform:translateX(-100%);
+
+    }
+
+}
+
+/*========================================
+            CABECERAS
+========================================*/
+
+.cabecera-pagina{
+
+    width:90%;
+
+    margin:40px auto;
+
+    background:white;
+
+    border-radius:15px;
+
+    padding:40px;
+
+    text-align:center;
+
+    box-shadow:var(--sombra);
+
+}
+
+.cabecera-pagina h1{
+
+    color:var(--rojo);
+
+    margin-bottom:15px;
+
+    font-size:36px;
+
+}
+
+.cabecera-pagina p{
+
+    color:var(--gris);
+
+    font-size:18px;
+
+}
+
+/*========================================
+                SECCIONES
+========================================*/
+
+.seccion{
+
+    width:90%;
+
+    margin:40px auto;
+
+    background:white;
+
+    border-radius:15px;
+
+    padding:35px;
+
+    box-shadow:var(--sombra);
+
+}
+
+.seccion h2{
+
+    color:var(--rojo);
+
+    margin-bottom:20px;
+
+}
+
+.seccion p{
+
+    color:var(--gris);
+
+}
+
+/*========================================
+            BOTONES GENERALES
+========================================*/
+
+button{
+
+    background:var(--rojo);
+
+    color:white;
+
+    border:none;
+
+    padding:14px 30px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    font-size:16px;
+
+}
+
+button:hover{
+
+    background:var(--rojo-hover);
+
+}
+
+.btn{
+
+    display:inline-block;
+
+    padding:12px 25px;
+
+    background:var(--rojo);
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:8px;
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    background:var(--rojo-hover);
+
+}
+
+/*========================================
+            ENLACES
+========================================*/
+
+a{
+
+    transition:.3s;
+
+}
+
+a:hover{
+
+    opacity:.9;
+
+}
+
+/*========================================
+                FOOTER
+========================================*/
+
+footer{
+
+    margin-top:60px;
+
+    background:var(--negro);
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px;
+
+}
+
+footer p{
+
+    color:#ddd;
+
+}
+
+/*========================================
+        TABLAS GENERALES
+========================================*/
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+th{
+
+    background:var(--rojo);
+
+    color:white;
+
+}
+
+th,
+td{
+
+    padding:15px;
+
+    border:1px solid #ddd;
+
+    text-align:left;
+
+}
+
+/*========================================
+        UTILIDADES
+========================================*/
+
+.text-center{
+
+    text-align:center;
+
+}
+
+.mt-20{
+
+    margin-top:20px;
+
+}
+
+.mt-40{
+
+    margin-top:40px;
+
+}
+
+.mb-20{
+
+    margin-bottom:20px;
+
+}
+
+.mb-40{
+
+    margin-bottom:40px;
+
+}

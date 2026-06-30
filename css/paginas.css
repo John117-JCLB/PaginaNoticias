@@ -1,0 +1,444 @@
+/*========================================
+        CABECERA DE PÁGINAS
+========================================*/
+
+.cabecera-pagina{
+
+    width:90%;
+
+    margin:40px auto;
+
+    background:var(--blanco);
+
+    padding:50px;
+
+    border-radius:var(--radio);
+
+    box-shadow:var(--sombra);
+
+    text-align:center;
+
+}
+
+.cabecera-pagina h1{
+
+    font-size:40px;
+
+    color:var(--rojo);
+
+    margin-bottom:15px;
+
+}
+
+.cabecera-pagina p{
+
+    color:var(--gris);
+
+    font-size:18px;
+
+    max-width:800px;
+
+    margin:auto;
+
+}
+
+/*========================================
+        CONTENEDOR GENERAL
+========================================*/
+
+.contenedor-pagina{
+
+    width:90%;
+
+    margin:40px auto;
+
+}
+
+/*========================================
+        NOTICIA DESTACADA
+========================================*/
+
+.destacada{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:30px;
+
+    margin-bottom:50px;
+
+}
+
+.destacada-principal{
+
+    background:white;
+
+    border-radius:var(--radio);
+
+    overflow:hidden;
+
+    box-shadow:var(--sombra);
+
+}
+
+.destacada-principal img{
+
+    width:100%;
+
+    height:420px;
+
+    object-fit:cover;
+
+}
+
+.destacada-contenido{
+
+    padding:30px;
+
+}
+
+.destacada-contenido h2{
+
+    font-size:32px;
+
+    margin-bottom:20px;
+
+}
+
+.destacada-contenido p{
+
+    color:var(--gris);
+
+}
+
+/*========================================
+        NOTICIAS LATERALES
+========================================*/
+
+.lateral{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.noticia-lateral{
+
+    display:flex;
+
+    background:white;
+
+    border-radius:var(--radio);
+
+    overflow:hidden;
+
+    box-shadow:var(--sombra);
+
+    transition:.3s;
+
+}
+
+.noticia-lateral:hover{
+
+    transform:translateX(8px);
+
+}
+
+.noticia-lateral img{
+
+    width:130px;
+
+    height:130px;
+
+    object-fit:cover;
+
+}
+
+.noticia-lateral .texto{
+
+    padding:15px;
+
+}
+
+.noticia-lateral h4{
+
+    margin-bottom:10px;
+
+    font-size:18px;
+
+}
+
+.noticia-lateral p{
+
+    font-size:14px;
+
+    color:var(--gris);
+
+}
+
+/*========================================
+        LISTADO DE NOTICIAS
+========================================*/
+
+.lista-noticias{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+    margin-top:40px;
+
+}
+
+/*========================================
+        TARJETAS
+========================================*/
+
+.card-pagina{
+
+    background:white;
+
+    border-radius:var(--radio);
+
+    overflow:hidden;
+
+    box-shadow:var(--sombra);
+
+    transition:.3s;
+
+}
+
+.card-pagina:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:var(--sombra-hover);
+
+}
+
+.card-pagina img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+}
+
+.card-pagina .contenido{
+
+    padding:20px;
+
+}
+
+.card-pagina h3{
+
+    margin-bottom:15px;
+
+    font-size:22px;
+
+}
+
+.card-pagina p{
+
+    color:var(--gris);
+
+    margin-bottom:20px;
+
+}
+
+.card-pagina a{
+
+    text-decoration:none;
+
+    color:var(--rojo);
+
+    font-weight:bold;
+
+}
+
+.card-pagina a:hover{
+
+    color:var(--rojo-hover);
+
+}
+
+/*========================================
+        CATEGORÍAS
+========================================*/
+
+.badge{
+
+    display:inline-block;
+
+    background:var(--rojo);
+
+    color:white;
+
+    padding:8px 15px;
+
+    border-radius:20px;
+
+    font-size:13px;
+
+    margin-bottom:15px;
+
+}
+
+/*========================================
+        PAGINACIÓN
+========================================*/
+
+.paginacion{
+
+    margin:60px auto;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+}
+
+.paginacion a{
+
+    width:45px;
+
+    height:45px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-decoration:none;
+
+    background:white;
+
+    color:var(--rojo);
+
+    border-radius:8px;
+
+    box-shadow:var(--sombra);
+
+    transition:.3s;
+
+}
+
+.paginacion a:hover{
+
+    background:var(--rojo);
+
+    color:white;
+
+}
+
+.paginacion .activo{
+
+    background:var(--rojo);
+
+    color:white;
+
+}
+
+/*========================================
+        EFECTOS
+========================================*/
+
+.card-pagina img,
+.noticia-lateral img{
+
+    transition:.5s;
+
+}
+
+.card-pagina:hover img{
+
+    transform:scale(1.05);
+
+}
+
+.destacada-principal:hover img{
+
+    transform:scale(1.02);
+
+}
+
+/*========================================
+        ANIMACIÓN
+========================================*/
+
+.card-pagina{
+
+    animation:entrada .5s ease;
+
+}
+
+@keyframes entrada{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/*====================================
+        CABECERAS DE PAGINAS
+====================================*/
+
+.cabecera-pagina{
+
+    width:90%;
+
+    margin:40px auto;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+    text-align:center;
+
+}
+
+.cabecera-pagina h1{
+
+    color:#c62828;
+
+    margin-bottom:15px;
+
+    font-size:36px;
+
+}
+
+.cabecera-pagina p{
+
+    color:#666;
+
+    line-height:1.6;
+
+}
